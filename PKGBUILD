@@ -4,7 +4,6 @@ pkgrel=1
 pkgdesc='Grasshopper bootsplash'
 arch=('any')
 license=('GPL')
-install="${pkgname}.install"
 source=("$pkgbase::git+https://github.com/taleUI/plymouth_themes_grasshopper-splash.git")
 sha512sums=('SKIP')
 
