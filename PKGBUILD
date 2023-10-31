@@ -4,11 +4,11 @@ pkgrel=1
 pkgdesc='Grasshopper bootsplash'
 arch=('any')
 license=('GPL')
-source=("$pkgbase::git+https://github.com/taleUI/plymouth_themes_grasshopper-splash.git")
+source=("plymouth_themes_grasshopper-splash::git+https://github.com/taleUI/plymouth_themes_grasshopper-splash.git")
 sha512sums=('SKIP')
 
 package() {
-  cd "$srcdir/$pkgbase"
+  cd "$srcdir/plymouth_themes_grasshopper-splash"
   mkdir -p $pkgdir/usr/share/plymouth/themes/grasshopper-splash
   install -Dm644 * "${pkgdir}"/usr/share/plymouth/themes/grasshopper-splash
 }
