@@ -1,3 +1,7 @@
-Name=Grasshopper Desktop Session
-Exec=/usr/bin/runewm
+[Desktop Entry]
+Version=1.0
+Name=GrasshopperDE Session
+Exec=runewm
+Icon=
 Type=Application
+DesktopNames=GrasshopperDE

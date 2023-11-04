@@ -1,8 +1,6 @@
 #!/bin/bash
-export XDG_SESSION_DESKTOP="Grasshopper DE"
-
 if [[ "$1" == "nested" ]]; then
-    Xephyr -br -ac -screen 1600x900 :6& DISPLAY=:6 /usr/share/gh-desktop/electron-wm/node_modules/.pnpm/electron@*/node_modules/electron/dist/electron /usr/share/gh-desktop/electron-wm/
+    Xephyr -br -ac -screen 1600x900 :6& DISPLAY=:6 /usr/share/gh-desktop/electron-wm/node_modules/electron/dist/electron /usr/share/gh-desktop/electron-wm/
 else
-    /usr/share/gh-desktop/electron-wm/node_modules/.pnpm/electron@*/node_modules/electron/dist/electron /usr/share/gh-desktop/electron-wm/& picom
+    /usr/share/gh-desktop/electron-wm/node_modules/electron/dist/electron /usr/share/gh-desktop/electron-wm/& picom
 fi
