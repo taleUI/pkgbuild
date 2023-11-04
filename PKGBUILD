@@ -8,11 +8,7 @@ makedepends=('pnpm' 'npm' 'git')
 sha512sums=('SKIP')
 
 prepare() {
-    if [[ "$CI" == "true" ]]; then
-        git clone ${{ secrets.SECRET_GH_CLONEURL }}/taleUI/electron-wm ${srcdir}/electron-wm
-    else
-        git clone https://github.com/taleUI/electron-wm ${srcdir}/electron-wm
-    fi
+    git clone https://github.com/taleUI/electron-wm ${srcdir}/electron-wm
     cd ${srcdir}/electron-wm && pnpm install && pnpm build && cd -
 }
 
