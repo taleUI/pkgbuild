@@ -5,7 +5,6 @@ pkgdesc='Grasshopper desktop - DEBUG VERSION'
 arch=('any')
 license=('GPL')
 makedepends=('pnpm' 'npm' 'git')
-source=("gh-desktop.desktop")
 sha512sums=('SKIP')
 
 prepare() {
