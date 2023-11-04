@@ -1,0 +1,3 @@
+Name=Grasshopper Desktop Session
+Exec=/usr/bin/runewm
+Type=Application
