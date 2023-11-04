@@ -14,6 +14,7 @@ prepare() {
     else
         git clone https://github.com/taleUI/electron-wm ${srcdir}/electron-wm
     fi
+    cd ${srcdir}/electron-wm && pnpm install && pnpm build && cd -
 }
 
 package() {
